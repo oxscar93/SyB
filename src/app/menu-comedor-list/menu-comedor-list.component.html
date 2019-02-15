@@ -1,0 +1,9 @@
+<div class="custom-margin">
+  <div class="margin-no-header">
+      <div class="card mb-2" *ngFor="let comedor of comedorList" (click)="updateMenu(comedor)">
+          <div class="card-body">      
+            <img class="comedor-logo" [src]="comedor.imageUrl">          
+          </div>
+        </div>
+    </div>
+</div>

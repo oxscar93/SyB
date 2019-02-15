@@ -1,0 +1,57 @@
+.header-container{
+    height: 85px;
+    width: 100%;
+    color:white;
+    font-weight: 400;
+}
+
+.header-container p {
+   padding: 15px;
+   display: inline-block;
+}
+
+.body-container-comedor{
+    width: 200px;
+
+}
+
+.body-container{
+    margin-top: 25px;
+    height: 307px;
+    width: 87%;
+}
+
+.btn-comedor{
+    background: url("/assets/images/AddComedor-button.png");
+    width: 149px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn-back{
+    float: right;
+    cursor: pointer;
+}
+
+label{
+    color:#C1C1C1
+}
+
+.textbox-container{
+    width: 50%;
+    margin:15px;    
+}
+
+.btn-quitar{
+    bottom: 154%;
+    left: 68%;
+    width: 7%;
+    position: relative;
+}
+
+.card{
+    height: 100px;
+    width: 95%
+}

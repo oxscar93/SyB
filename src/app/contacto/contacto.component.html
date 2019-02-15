@@ -1,0 +1,78 @@
+<div class="custom-margin">
+    <div class="margin-no-header">
+      <div class="card card-w">
+          <div class="card-header text-center">
+              Datos de contacto
+          </div>
+          <div class="card-body">
+              <form (ngSubmit)="update()" #contactForm="ngForm">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label >Facebook</label>
+                      <input type="text" class="form-control" name="facebook" [(ngModel)]="contacto.facebookUrl" placeholder="">
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Instagram</label>
+                    <input type="text" class="form-control" name="instagram" [(ngModel)]="contacto.instagramUrl" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Twitter</label>
+                    <input type="text" class="form-control" name="twitter" [(ngModel)]="contacto.twitterUrl" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Whatsapp</label>
+                    <input type="text" class="form-control" name="whastapp" [(ngModel)]="contacto.whatsAppUrl" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                      <label>YouTube</label>
+                      <input type="text" class="form-control" name="youtube" [(ngModel)]="contacto.youTubeUrl" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="text" class="form-control" name="telefono" [(ngModel)]="contacto.phoneNumber" placeholder="">
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                      <label>Lugar</label>
+                      <input type="text" class="form-control" name="lugar" [(ngModel)]="contacto.factory" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                      <label>Calle</label>
+                      <input type="text" class="form-control" name="calle" [(ngModel)]="contacto.address" placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                      <label>Localidad</label>
+                      <input type="text" class="form-control" name="localidad" [(ngModel)]="contacto.location" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="row float-right">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-aceptar">Aceptar</button>
+                    </div>   
+                  </div>         
+              </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>     

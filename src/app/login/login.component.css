@@ -1,0 +1,32 @@
+.login-content{
+    background: url("../../assets/images/login-background.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+  }
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+}
+
+.btn-login{
+    color: #fff;
+    background-color: #17a2b8!important;
+    border-color: #17a2b8!important;
+}
+.croni-login-img{
+    margin: 0 auto;
+    margin-bottom: 62px;
+    max-width: 100%;
+    width: 125px;
+    height: auto;
+    display: block;
+}

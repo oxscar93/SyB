@@ -1,0 +1,70 @@
+.header-container-top{
+    height: 222px;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 9;
+}
+
+.calendar-container{
+    margin-left: 115px;
+    margin-top: -15px;
+}
+
+.date-now-info{
+    height: 150px;
+    width: 300px;
+    color:white;
+    display: flex;
+    padding: 20px;
+}
+
+.custom-day {
+    text-align: center;
+    padding: 0.185rem 0.25rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    width: 2rem;
+}
+
+.custom-day.focused {
+    background-color: #94BA20;
+    border-radius: 20px;
+    color: white;
+    text-decoration: line-through;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo-container{
+    margin-left: auto;
+}
+
+i{
+    transform: rotate(90deg);
+    color: #94BA20 !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+::ng-deep .bg-primary {
+    background-color: #E6B650 !important;
+    color: white !important;
+}
+
+::ng-deep .ngb-dp-day{
+    outline: none;
+}
+
+::ng-deep .btn-link{
+    color:#94BA20 !important
+}
+
+ngb-datepicker{
+    border: none !important
+}

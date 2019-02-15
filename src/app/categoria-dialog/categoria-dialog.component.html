@@ -1,0 +1,17 @@
+
+<form (ngSubmit)="onOk(categoriaForm.form.valid)" #categoriaForm="ngForm">
+  <div class="modal-header">
+      <h4 class="modal-nombre">{{options.title}}</h4>
+  </div>
+
+  <div class="modal-body">
+      <div class="form-group">   
+          <label>Nombre Categoría</label>
+          <input class="form-control" name = "nombre" required placeholder="Nombre" [(ngModel)]="categoria.title">
+      </div>
+  </div>
+  <div class="modal-footer">
+      <button type="submit" class="btn btn-danger btn-aceptar-modal">Aceptar</button>
+      <button type="button" class="btn btn-transparent" (click)="onCancel()">Cancelar</button>
+  </div>
+</form>

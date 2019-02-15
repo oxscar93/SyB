@@ -1,0 +1,33 @@
+
+<form (ngSubmit)="onOk(comedorForm.form.valid)" #comedorForm="ngForm">
+    <div class="modal-header">
+        <h4 class="modal-nombre">{{options.title}}</h4>
+    </div>
+
+    <div class="modal-body">
+        <div class="text-center">   
+            <app-file-upload [customFileUrl]= "comedor.imageUrl" (imageEmitter)="getImg($event)"></app-file-upload>
+        </div>
+
+        <div class="form-group">   
+            <label>Nombre comedor</label>
+            <input class="form-control" name = "nombre" required placeholder="Nombre" [(ngModel)]="comedor.title">
+        </div>
+        <div class="form-group">  
+            <label>Nombre usuario</label>
+            <input class="form-control" name = "usuario" placeholder="Ingresar Usuario" required [(ngModel)]="comedor.user">
+        </div> 
+        <div class="form-group">  
+            <label>Contraseña</label>
+            <input class="form-control" type="text" name = "password" placeholder="Ingresar Contraseña" required [(ngModel)]="comedor.password">
+        </div> 
+        <div class="form-group">  
+            <label>Repetir contraseña</label>
+            <input class="form-control" type="text" name = "confirmarPassword" placeholder="Repetir Contraseña" required [(ngModel)]="repeatedPassword">
+        </div> 
+    </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-danger btn-aceptar-modal">Aceptar</button>
+            <button type="button" class="btn btn-transparent" (click)="onCancel()">Cancelar</button>
+        </div>
+</form>

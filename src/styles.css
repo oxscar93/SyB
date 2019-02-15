@@ -1,0 +1,151 @@
+@import '~angular2-toaster/toaster';
+
+.syb-green{
+    background-color: #94BA20 !important;
+}
+.custom-margin{
+    margin-left: 15% !important;
+}
+.fix-top{
+    top: 190px;
+}
+.CuadroCarga{
+    width: 100%;
+}
+.shadow-containers{
+    box-shadow: 5px 7px #88888845;
+}
+.round-img{
+    border-radius: 7%;
+    overflow: hidden;
+}
+.view-header{
+    height: 135px;
+    width: 100%;
+    margin-top: -177px;
+    position: fixed;
+    z-index: 1500;
+}
+.h3 {
+    margin: 0 0 10px;
+  }
+  
+.pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+  }
+body{
+    background-color: #F7F7F7 !important;
+    overflow-x: hidden
+}
+
+.custom-margin-top{
+    margin-top: 250px;
+    margin-left: 118px;
+}
+::placeholder {
+    color: #C1C1C1;
+    font-weight: 400;
+    font-size: 13px;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #C1C1C1;
+   font-weight: 400;
+   font-size: 13px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #C1C1C1;
+   font-weight: 400;
+   font-size: 13px;
+}
+
+.modal-footer{
+    justify-content: center !important;
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 8px solid #42A948 !important; /* green */
+  }
+  
+.ng-invalid:not(form)  {
+   border-left: 8px solid red !important; /* red */
+ }
+
+ .btn-aceptar{
+    background: #E6B650;
+    border-radius: 10px !important;
+    color: white;
+    text-transform: uppercase !important;
+    width: 145px;
+    height: 33px;
+    padding: 0 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+ }
+
+ .btn-eliminar{
+    background: url("/assets/images/Eliminar-Button.png");
+    display: inline-block;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 25px;
+    position: absolute;
+    right: 12%;
+    top: 10px;
+
+}
+.btn-editar{
+    background: url("/assets/images/Editar-Button.png");
+    display: inline-block;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 26px;
+    width: 8px;
+    position: absolute;
+    right: 12%;
+    top: 40px;
+}
+ 
+.margin-no-header{
+    margin-top: 5px;
+    margin-left: 118px
+}
+
+.comedor-logo{
+    width: 150px;
+    height: 60px;
+}
+
+.button-add-container{
+    width: 200px;
+}
+
+.btn-tips{
+    background: url("/assets/images/AddTipS-Button.png");
+    width: 166px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn-tips:focus{
+    border: none !important;
+    box-shadow: none !important
+}
+
+
+@media(max-width:766px){
+    .view-header{
+        top:0;
+        margin-top: 0
+    }
+    .modal-header{
+       justify-content: center !important
+    }
+}

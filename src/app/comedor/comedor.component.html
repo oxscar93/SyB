@@ -1,0 +1,24 @@
+<div class="custom-margin">
+    <div class="margin-no-header">
+        <div class="body-container-comedor shadow-containers p-3 mb-5 bg-white rounded">
+            <button type="button" (click)="addComedor()" class="btn btn-comedor form-control "></button>              
+        </div>
+       
+        <div class="card mb-2" *ngFor="let comedor of comedorList">
+            <div class="card-body">      
+              <img class="comedor-logo" [src]="comedor.imageUrl"> 
+              <button type="button" (click)="updateComedor(comedor)" class="btn btn-editar"></button>
+              <button type="button" (click)="delComedor(comedor)" class="btn btn-eliminar"></button>            
+            </div>
+          </div>
+      </div>
+   
+</div>
+
+<ng-template addComedor>
+    <app-comedor-dialog></app-comedor-dialog>
+  </ng-template>
+  
+<ng-template confirm>
+    <app-confirmation-dialog></app-confirmation-dialog>
+</ng-template>

@@ -1,0 +1,21 @@
+
+<form (ngSubmit)="onOk(platoForm.form.valid)" #platoForm="ngForm">
+  <div class="modal-header">
+      <h4 class="modal-title">{{options.title}}</h4>
+  </div>
+
+  <div class="modal-body">
+      <div class="form-group">  
+          <label>Título del plato</label>                
+          <input class="form-control" name = "title" required [(ngModel)]="plato.title" placeholder="Titulo">
+      </div>
+      <div class="form-group">  
+          <label>Descripción del plato</label>
+          <textarea class="form-control" name = "description" placeholder="Ingresar Texto" required [(ngModel)]="plato.description"></textarea>
+      </div> 
+  </div>
+      <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-aceptar-modal">Aceptar</button>
+          <button type="button" class="btn btn-transparent" (click)="onCancel()">Cancelar</button>
+      </div>
+</form>

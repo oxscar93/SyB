@@ -1,0 +1,86 @@
+.card{
+    height: auto;
+    width: 95%;
+}
+
+.card-title{
+    width: 300px;
+    height: 35px;
+    color: white;
+    padding: 4px;
+    font-weight: 400;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+.card-header{
+    background-color: white !important;
+}
+
+.card-header .fa {
+    transition: .3s transform ease-in-out;
+}
+
+.card-header i {
+    color: #94BA20;
+    cursor: pointer;
+}
+
+.card-header .collapsed {
+    transform: rotate(180deg);
+}
+
+.card-body{
+    padding: 0;
+}
+
+.btn-categoria{
+    background: url("/assets/images/AddCategoria-button.png");
+    width: 166px;
+    height: 40px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn-plato{
+    background: url("/assets/images/AddPlato-button.png");
+    width: 120px;
+    height: 44px;
+    display: inline-block;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn-eliminar-plato{
+    background: url("/assets/images/Eliminar-Button.png");
+    display: inline-block;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 25px;
+
+}
+.btn-editar-plato{
+    background: url("/assets/images/Editar-Button.png");
+    display: inline-block;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 26px;
+    width: 8px;
+}
+
+.title-container{
+    display: inline-block
+}
+
+.title-container p {
+    margin-left: 10px;
+}
+
+.separator{
+    width: 200px
+}

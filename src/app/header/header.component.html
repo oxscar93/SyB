@@ -1,0 +1,41 @@
+<div class="header-container-top p-3 bg-white rounded">
+    <div class="custom-margin">
+            <div class="calendar-container">
+                    <nav class="d-flex">
+                        <div class="date-now-info syb-green">
+                           <div class="w-100 text-center">
+                                <h3>{{currentDayString}}</h3>
+                                <h2>{{model.day}}</h2>
+                            </div>   
+                            
+                            <div class="w-100 text-center">
+                                <h3>{{currentMonthString}}</h3>
+                                <h2>{{model.year}}</h2>
+                            </div> 
+                        </div>
+                        <div class="ml-2">
+                            <ngb-datepicker #dp 
+                                            [(ngModel)]="model" 
+                                            (select) ="changeDate($event)"
+                                            (navigate)="navigateMonth(date = $event.next)"
+                                            [dayTemplate]="customDay"></ngb-datepicker>
+    
+                            <ng-template #customDay let-date let-currentMonth="currentMonth" let-selected="selected" let-disabled="disabled" let-focused="focused">
+                                <span class="custom-day" [class.focused]="isSelected(date)"
+                                    [class.bg-primary]="selected" [class.hidden]="date.month !== currentMonth" [class.text-muted]="disabled">
+                                {{ date.day }}
+                                </span>
+                            </ng-template>  
+                        </div> 
+                        
+                        <div class="logo-container">
+                             <img class="comedor-logo" [src]="comedorImg">       
+                        </div>   
+                        
+                        <div class="ml-2 mt-3 cursor-pointer" (click)="back()">
+                            <i class="fa fa-chevron-down"></i> Volver      
+                       </div> 
+                 </nav>
+            </div>
+        </div>
+</div>

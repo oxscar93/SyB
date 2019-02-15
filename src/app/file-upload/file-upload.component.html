@@ -1,0 +1,4 @@
+<label [style.background]="getImgUrl()" class="file-container mx-sm-1">
+    <img *ngIf="fileUploaded" src="" imgPreview [image]="fileUploaded" class="media-object" />                           
+    <input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+</label>  

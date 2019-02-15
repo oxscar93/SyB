@@ -1,0 +1,27 @@
+<div class="login-content">    
+        <div id="login">
+            <div class="container">
+                <div id="login-row" class="row justify-content-center align-items-center">
+                    <div id="login-column" class="col-md-6">
+                        <div id="login-box" class="col-md-12">
+                            <form id="login-form" class="form" 
+                                (ngSubmit)="signIn(loginForm.form.valid)" 
+                                #loginForm="ngForm">
+                                <img class="croni-login-img" src="assets/images/S&B-Logo.png">
+                                <div class="form-group">                             
+                                    <input type="text" name="username" [(ngModel)]="params.username" id="username" required placeholder="Email" class="form-control">
+                                </div>
+                                <div class="form-group">                    
+                                    <input type="password" [(ngModel)]="params.password" name="password" id="password" required placeholder="Contraseña" class="form-control">
+                                </div>
+                                <div class="form-group "> 
+                                   <input type="submit" name="submit" class="btn btn-login btn-md" value="ENTRAR">
+                                </div>
+                                <app-alert></app-alert>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

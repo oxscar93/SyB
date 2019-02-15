@@ -1,0 +1,28 @@
+<div class="custom-margin">
+      <div class="margin-no-header">
+        <div class="button-add-container shadow-containers p-3 mb-5 bg-white rounded">
+            <button type="button" (click)="addTip()" class="btn btn-tips form-control "></button>              
+        </div>
+
+      <div class="card mb-2" *ngFor="let tip of tipList">
+          <div class="card-body">
+            <h5 class="card-title">{{tip.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              {{dateFormatPipeFilter.transform(tip.fecha.getTime().toString())}}
+            </h6>
+            <p class="card-text">{{tip.description}}</p>
+            <button type="button" (click)="delTip(tip)" class="btn btn-eliminar"></button>     
+            <button type="button" (click)="updateTip(tip)" class="btn btn-editar"></button>
+          </div>
+        </div>
+    </div>
+</div>     
+ 
+
+<ng-template addTip>
+  <app-tip-dialog></app-tip-dialog>
+</ng-template>
+
+<ng-template confirm>
+  <app-confirmation-dialog></app-confirmation-dialog>
+</ng-template>

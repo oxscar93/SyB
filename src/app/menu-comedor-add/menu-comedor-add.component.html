@@ -1,0 +1,67 @@
+<app-header-component [comedorId]="comedorId" 
+                      [comedorImg]="imgUrl" 
+                      (dateChanged)='getCategoriaList($event)'>
+</app-header-component>
+
+<div class="custom-margin">
+  <div class="custom-margin-top">
+    <div class="button-add-container shadow-containers p-3 mb-5 bg-white rounded">
+        <button type="button" (click)="addCategoria()" class="btn btn-categoria form-control "></button>              
+    </div>
+
+    <div class="card mt-2" *ngFor="let categoria of categoriaList; let i = index">
+      <h5 class="card-header">
+          <div class="card-title syb-green">
+               {{categoria.title}}
+         </div>
+          <button type="button" (click)="addPlato(categoria)" class="btn btn-plato ml-2"></button> 
+          <button type="button" (click)="delCategoria(categoria)" class="btn btn-eliminar"></button>     
+          <button type="button" (click)="updateCategoria(categoria)" class="btn btn-editar"></button>
+          <i (click)= "acoordionValues[i] = !acoordionValues[i]" class="fa fa-chevron-down pull-right" [ngClass]="!acoordionValues[i] ? 'collapsed': ''"></i>
+      </h5>
+      <div [ngClass]="!acoordionValues[i] ? 'collapse': 'show'">
+          <div *ngIf="!categoria.foodItems || categoria.foodItems.length == 0" class="card-body text-center">
+                 No hay platos disponibles.
+          </div>
+
+          <div *ngIf="categoria.foodItems && categoria.foodItems.length != 0" class="card-body">
+            <table class="table">
+              <tbody>
+                <tr *ngFor="let plato of categoria.foodItems; let ip = index">
+                  <td>
+                      <div class="title-container mb-1">
+                          <div class="d-flex">
+                            <p class="separator">{{plato.title}}</p>
+                            <p class="separator">|</p>
+                            <p>{{plato.description}}</p>
+                          </div>
+                      </div>
+                      <div class="pull-right">
+                          <button type="button" (click)="delPlato(categoria, plato)" class="btn btn-eliminar-plato"></button>     
+                          <button type="button" (click)="updatePlato(categoria, plato)" class="btn btn-editar-plato"></button> 
+                      </div> 
+                     
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+            
+         </div>
+      </div>
+  </div>
+
+</div>
+</div>     
+
+
+<ng-template addCategoria>
+  <app-categoria-dialog></app-categoria-dialog>
+</ng-template>
+
+<ng-template addPlato>
+  <app-plato-dialog></app-plato-dialog>
+</ng-template>
+
+<ng-template confirm>
+  <app-confirmation-dialog></app-confirmation-dialog>
+</ng-template>

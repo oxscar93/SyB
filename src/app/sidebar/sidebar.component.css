@@ -1,0 +1,46 @@
+.sidebar-container{
+    background-image:url('/assets/images/Sidebar-background.png');
+    width: 250px;
+    height: 100vh;
+    top:0;
+    position: fixed;
+    z-index: 10;
+}
+
+.SyB-logo{
+    width: 65%;
+    margin: 40px;
+    margin-top: 20px;
+    margin-left: 38px;
+}
+
+.btn-container{
+    background: rgb(0,0,0, 0.1);
+
+}
+
+.btn-container-bottom{
+    background: rgb(0,0,0, 0.1);
+    height: 100vh;
+    padding-left: 33px;
+}
+
+.btn-option{
+    width: 185px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.btn-salir{
+    width: 23%;
+    cursor: pointer;
+}
+.btn-menu{
+    display: inline;
+    margin: 2px;
+}
+.contact-btn{
+    font-size: 21px;
+    text-decoration: none;
+    color: #FAFBF7;
+    font-weight: 500;
+}

@@ -1,0 +1,32 @@
+<div class="sidebar-container">
+    <img class="SyB-logo" src="assets/images/S&B-Logo.png">
+   
+
+   <div class="btn-container">    
+        <ul class="list-unstyled btn-menu text-center mt-2">
+            <li>
+                <a routerLink="/home/menu-comedor-list" routerLinkActive="active"><img class="btn-option" src="assets/images/Configurar-Button.png"></a>
+            </li>
+            <li>
+                <a routerLink="/home/comedor" routerLinkActive="active"><img class="btn-option" src="assets/images/GenerarComedor-Button.png"></a>
+            </li>
+            <li>
+                <a routerLink="/home/tips-cocina" routerLinkActive="active"><img class="btn-option" src="assets/images/TipsDeCocina-Button.png"></a>
+            </li>
+            <li>
+                <a routerLink="/home/tips-saludables" routerLinkActive="active"><img class="btn-option" src="assets/images/TipsSaludables-Button.png"></a>
+            </li>
+        </ul>
+  </div>
+  <div class="btn-container-bottom">    
+        <ul class="list-unstyled btn-menu mt-2">
+            <li>
+                <a class ="contact-btn" routerLink="/home/contacto" routerLinkActive="active"><p>Contacto</p></a>
+            </li>
+            <li>
+                <a (click)="logOut()"><img class="btn-salir" src="assets/images/Salir-Button.png"></a>
+            </li>
+        </ul>
+  </div>
+   
+</div>

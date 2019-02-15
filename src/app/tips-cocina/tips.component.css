@@ -1,0 +1,10 @@
+label{
+    color:#C1C1C1
+}
+
+.card{
+    height: 180px;
+    border-left-color: red;
+    border-left-width: 7px;
+    width: 95%
+}
